@@ -1,0 +1,115 @@
+body{
+    background: linear-gradient(0deg, rgb(192, 52, 168) 0%, rgb(56, 112, 196) 70%);
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .vite,.sb{
+    width: 50px;
+    animation: cRotation 3.5s infinite linear;
+  }
+
+  .react,.mysql{
+    width:50px;
+    animation: acRotation 3.5s infinite linear;
+  }
+
+  .topFlex{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .downFlex{
+    display: flex;
+    justify-content:space-between;
+    margin-top:20px;
+    margin-bottom: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .register-container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgb(85, 85, 85);
+    margin: auto;
+  }
+  
+  .register-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-form input,
+  .register-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .register-form input:focus,
+  .register-form textarea:focus {
+    border-color: rgb(56, 112, 196);
+    outline: none;
+  }
+  
+  .register-button {
+    padding: 10px;
+    background-color: rgb(56, 112, 196);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .register-button:hover {
+    background-color: rgb(192, 52, 168);
+  }
+
+  .register-button:active {
+    background-color: rgb(56, 112, 196);
+    
+  }
+  
+
+  @keyframes cRotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes acRotation {
+  from {
+      transform: rotate(360deg);
+  }
+  to {
+      transform: rotate(0deg);
+  }
+}
+
+@media (max-width:480px) {
+  .register-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
