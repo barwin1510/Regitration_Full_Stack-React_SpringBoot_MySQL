@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import Vite from "../assets/vite.png";
 import ReactPic from "../assets/react.png";
 import SB from "../assets/spring-boot.png";
 import MySQL from "../assets/mysql.png";
@@ -27,10 +26,9 @@ const Register = () => {
     e.preventDefault();
     console.log("Form submitted:", formData);
     try {
-      await axios.post("http://localhost:8080/api/register", formData);
+      await axios.post("http://localhost:8080/register", formData);
       navigate("/success");
     } catch (error) {
-      console.error("Error registering user:", error);
       navigate("/failure");
     }
   };

@@ -15,7 +15,6 @@ import com.project.Registration.repository.UserRepository;
 
 @CrossOrigin(origins = "http://localhost:5173/")
 @RestController
-@RequestMapping("/api")
 public class UserController {
 
     @Autowired
